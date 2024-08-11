@@ -1,0 +1,11 @@
+# Use the official WordPress image as the base image
+FROM wordpress:latest
+
+# Copy the environment file
+COPY .env .env
+
+# Expose port 80
+EXPOSE 80
+
+# Start Apache server
+CMD ["apache2-foreground"]

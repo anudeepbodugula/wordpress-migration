@@ -1,0 +1,17 @@
+# Use the official MySQL image as the base image
+FROM mysql
+
+# Copy the environment file
+COPY .env .env
+
+# Source environment variables from .env file
+ENV MYSQL_DATABASE=${MYSQL_DATABASE}
+ENV MYSQL_USER=${MYSQL_USER}
+ENV MYSQL_PASSWORD=${MYSQL_PASSWORD}
+ENV MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+
+# Expose port 3306
+EXPOSE 3306
+
+# Initialize the MySQL database
+CMD ["mysqld"]
