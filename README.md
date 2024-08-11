@@ -17,16 +17,7 @@ Before you begin, ensure you have the following:
     • WordPress site files
     • GitHub repository for version control (optional)
 
-Project Structure:
-
-wordpress-migration/
-│
-├── Dockerfile (for WordPress)
-├── wp-config.php (WordPress configuration file)
-├── wordpress_backup.sql (MySQL database backup)
-├── .env (environment variables for Docker)
-└── README.md (project documentation)
-
+x
 Steps to Migrate:
 
 Set Up AWS Environment
